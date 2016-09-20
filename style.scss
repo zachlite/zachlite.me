@@ -1,0 +1,53 @@
+$primary-color: purple;
+
+#links {
+    margin: 0px;
+    list-style-type: none;
+    li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
+
+.container {
+    width: 70%;
+    margin: 0px auto;
+}
+
+#quote-block {
+    font-size: 12px;
+    color: #777;
+}
+
+#about-img{
+    $height: 300px;
+    position: relative;
+    width: 100%;
+    height: $height;
+    margin: 0px auto;
+    overflow: hidden;
+
+    //mandatory
+    .masthead-img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+
+        width: 100%;        
+        height: $height;        
+
+        -webkit-background-size: cover!important;
+           -moz-background-size: cover!important;
+             -o-background-size: cover!important;
+                background-size: cover!important;
+    }
+
+    //mandatory
+    .masthead-content{
+        position: absolute;
+        z-index: 12;
+        left: 0;
+        right: 0;
+    }
+}
